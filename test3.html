@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test3</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+<div class="draw">ƒJ[ƒh‚ğˆø‚­</div>
+<div class="attack">Ÿ•‰‚ğ’§‚Ş</div>
+<h1></h1>
+<p></p>
+<h2></h2>
+
+<script type="text/javascript">
+    $("div").on("click", function () {
+        sum = 0;
+        $(this).toggleClass("special")
+        $("div").each(function (index) {
+
+                num = Math.floor(Math.random() * 5)
+                sum += num + 1
+            
+        });
+        $("h1").text(sum);
+    });
+
+</script>
+</body>
+</html>
